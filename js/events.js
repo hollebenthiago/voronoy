@@ -14,7 +14,7 @@ function onClick(event) {
                 }
         }
         if (willAdd) {
-            system.points.push(new Point(5, mousepos.x, mousepos.y, 5 * Math.random(), 5 * Math.random(), 15))
+            system.points.push(new Point(5, mousepos.x, mousepos.y, 5 * Math.random(), 5 * Math.random(), radius))
             colors.push([255 * Math.random(), 255 * Math.random(), 255 * Math.random(), 255 * Math.random()])
         }
         

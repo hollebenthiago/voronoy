@@ -24,8 +24,8 @@ function System(points, gconst) {
                    (object1.y - object2.y)*(object1.y - object2.y))**3);
         }
     }
-    //update position of points
-    this.update = function () {
+    //update position of points based on initial velocities
+    this.updateRandomMovement = function () {
         for (let i = 0; i < this.points.length; i++) {
             if (this.points[i].x + this.points[i].velx> w - this.points[i].radius) {
                 
@@ -98,7 +98,6 @@ function System(points, gconst) {
         }
         updatePixels();
         for (let i = 0; i < this.points.length; i++) {
-            // circle(points[i][0], points[i][1], 10)
             this.points[i].draw();
         }
     }
