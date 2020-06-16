@@ -1,9 +1,9 @@
 //metric function for voronoy diagram
 function metric(topology, a, b) {
-    if (topology == 'plane l1') {
+    if (topology == 'Plane taxicab distance') {
         return Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1])
     }
-    else if (topology == 'plane l2') {
+    else if (topology == 'Plane euclidean distance') {
         return Math.sqrt((a[0] - b[0])**2 + (a[1] - b[1])**2)
     }
     else if (topology == 'cylinder l1') {
