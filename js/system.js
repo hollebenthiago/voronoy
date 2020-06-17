@@ -92,7 +92,7 @@ function System(points, gconst) {
                     pixels[pix + 0] = (50 * best) % 160
                     pixels[pix + 1] = (0 * best) % 100 + 100
                     pixels[pix + 2] = (25 * best) % 50 + 50
-                    pixels[pix + 3] = best  * 2
+                    pixels[pix + 3] = best * 5
                 }
             }
         }
