@@ -8,6 +8,7 @@ function setup() {
     
     // adding color scheme button
     colorbtn = createSelect('Color scheme')
+    colorbtn.style.margin = '0 auto'
     colorbtn.parent('buttonsHere')
     colorbtn.option('Random colors')
     colorbtn.option('Noise')
@@ -16,6 +17,7 @@ function setup() {
 
     // adding metric button
     metricbtn = createSelect('Metric')
+    metricbtn.style.margin = '0 auto'
     metricbtn.parent('buttonsHere')
     metricbtn.option('Plane euclidean distance')
     metricbtn.option('Plane taxicab distance')
@@ -23,6 +25,7 @@ function setup() {
     metricbtn.changed(onMetricClick)
     
     var cnvs = createCanvas(w, h);
+    cnvs.style.margin = '0 auto'
     cnvs.parent('canvasHere')
     var canvas = document.getElementById('defaultCanvas0')
     pixelDensity(1);
