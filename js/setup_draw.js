@@ -14,7 +14,7 @@ function setup() {
     colorbtn.option('Noise')
     colorbtn.selected('Random colors')    
     colorbtn.changed(onColorClick)
-
+    // testando
     // adding metric button
     metricbtn = createSelect('Metric')
     metricbtn.style.margin = '0 auto'
